@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Repository</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .subject-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .subject-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .subject-card p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Question Paper Repository</h1>
+        <div class="subjects-grid">
+            <a href="manufacturing/index.html" class="subject-card">
+                <h2>🏭 Manufacturing</h2>
+                <p>Manufacturing Process Questions & Answers</p>
+            </a>
+            <a href="automobile/index.html" class="subject-card">
+                <h2>🚗 Automobile Engineering</h2>
+                <p>Automobile Engineering Questions & Answers</p>
+            </a>
+            <a href="power-engineering/index.html" class="subject-card">
+                <h2>⚡ Power Engineering</h2>
+                <p>Power Engineering Questions & Answers</p>
+            </a>
+            <a href="fluid-mechanics/index.html" class="subject-card">
+                <h2>💧 Fluid Mechanics</h2>
+                <p>Fluid Mechanics Questions & Answers</p>
+            </a>
+            <a href="material-handling/index.html" class="subject-card">
+                <h2>📦 Material Handling</h2>
+                <p>Material Handling Questions & Answers</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
